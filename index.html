@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARSA Cleaning & Security</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-[#f5f5f5] text-[#1f2f3f]">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-6 flex items-center justify-between">
+    <img src="logo.jpeg" alt="ARSA Logo" class="h-16" />
+    <nav class="space-x-6">
+      <a href="#about" class="font-semibold">About</a>
+      <a href="#services" class="font-semibold">Services</a>
+      <a href="#contact" class="font-semibold">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-[#e8ebef]">
+    <h1 class="text-5xl font-bold">Welcome to ARSA Cleaning & Security</h1>
+    <p class="mt-4 text-xl max-w-2xl mx-auto">
+      We provide top quality cleaning and reliable security solutions for your business. Trust us to maintain a safe and spotless environment.
+    </p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+    <p class="text-center max-w-3xl mx-auto text-lg">
+      ARSA Cleaning & Security is dedicated to delivering exceptional cleaning and security services tailored to business needs. Our team is committed to quality, professionalism, and trust.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 px-6 bg-[#e8ebef]">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+    <div class="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+      <div class="border rounded p-6 bg-white">
+        <h3 class="text-xl font-semibold">Commercial Cleaning</h3>
+        <p class="mt-2">Comprehensive cleaning solutions for offices, retail spaces, and industrial areas.</p>
+      </div>
+      <div class="border rounded p-6 bg-white">
+        <h3 class="text-xl font-semibold">Business Security</h3>
+        <p class="mt-2">Reliable on-site security services to protect your assets and personnel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded" />
+      <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded" />
+      <textarea rows="5" placeholder="Your Message" class="w-full border border-gray-300 p-3 rounded"></textarea>
+      <button type="submit" class="bg-[#1f2f3f] text-white px-6 py-3 rounded">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-[#1f2f3f] text-white">
+    &copy; <span id="year"></span> ARSA Cleaning & Security. All rights reserved.
+  </footer>
+
+  <script>
+    // Update footer year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
